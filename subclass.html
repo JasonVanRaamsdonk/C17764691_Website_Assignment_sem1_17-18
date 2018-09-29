@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+		<style>
+		
+           nav {
+                width: 100%;
+                background-color: #73aeff;
+                position: inherit;
+                }
+            
+        </style>
+        
+        <title>Destiny Database</title>
+    </head>
+    
+    <body>
+        
+      
+        
+       <header>
+		<nav>
+            
+                
+                <img src="assets/logo.png" alt="logo" class="logo">
+                
+                
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="armour.html">Armour</a></li>
+                        <li><a href="weapons.html">Weapons</a></li>
+                        <li><a href="subclass.html">Subclasses</a></li>
+                        <li><a href="raids.html">Raids</a></li>
+                    </ul>
+                
+            
+            
+			</nav>
+        </header>
+        
+        <center>
+        <div class="pagecontent">
+            
+            
+            
+            <h2>Subclasses</h2>
+            
+            <br>
+            <br>
+            
+            <!-- html for slideshow-->
+            
+            <div class="wrap">
+                <div id="arrow-left" class="arrow"></div>
+                <div id="slider">
+                    <div class="slide slide1">
+                        <div class="slide-content1">
+                            <span>Hunter</span>
+                        </div>
+                    </div>
+                
+                <div class="slide slide2">
+                        <div class="slide-content2">
+                            <span>Titan</span>
+                        </div>
+                    </div>
+                
+            <div class="slide slide3">
+                        <div class="slide-content3">
+                            <span>Warlock</span>
+                        </div>
+                    </div>
+                
+                <div id="arrow-right" class="arrow"></div>
+            </div>
+            
+                <script>
+                    let sliderImages = document.querySelectorAll('.slide'),
+                        arrowLeft = document.querySelector('#arrow-left'),
+                        arrowRight = document.querySelector('#arrow-right'),
+                        current = 0;
+                    
+                    //this will clear all images
+                    
+                    function reset(){
+                        for(let i = 0; i < sliderImages.length; i++){
+                            sliderImages[i].style.display = 'none';
+                        }
+                    }
+                    
+                    //initialises the slider
+                    
+                    function startSlide(){
+                        reset();
+                        sliderImages[0].style.display = 'block';
+                    }
+                    
+                    //show prev
+                    
+                    function slideLeft(){
+						if(current == 0){
+							current = sliderImages.length - 1;
+						}
+                        reset();
+                        sliderImages[current - 1].style.display = 'block';
+                        current--;
+						
+                    }
+                    
+                    //show next
+                    
+                    function slideRight(){
+                        reset();
+                        sliderImages[current + 1].style.display = 'block';
+                        current++;
+                    }
+                    
+                    
+                    // left arrow click
+                    
+                    arrowLeft.addEventListener('click', function(){
+                        if(current == 0){
+                            current = slideLeft.length;
+                        }
+                        slideLeft();
+                    });
+                    
+                     // right arrow click
+                    
+                    arrowRight.addEventListener('click', function(){
+                        if(current === sliderImages.length - 1){
+                            current = -1
+                        }
+                        slideRight();
+                    });
+                    
+                    
+                    
+                    startSlide();
+                </script>
+            
+        </div> 
+            
+            <br>
+            <br>
+            <br>
+            
+            <div class="containsymbol">
+            
+            <img src="assets/huntercrest.jpg" alt="symbol" class="symbol">
+                
+            <h3>
+                <i>
+                "What does it mean to be a Hunter? I say, it’s all about where you belong. 
+                he Warlocks have their libraries, the Titans have their walls...But Hunters belong in the wilds."
+                </i>
+                <br>
+                —Cayde-6
+                <br>
+                <br>
+                The Hunter is a type of Guardian who uses stealth and long ranged weapons to kill their enemies. Hunters tend to be taciturn, mostly keeping to themselves and using lightweight throwing knives and smoke to disorient their enemies. Hunter Cloaks provide a sense of mystery and excellent camouflage when they are in the wild.
+                <br>
+            </h3>
+            
+            </div>
+            
+        
+            
+            <div class="containsymbol">
+            
+            <img src="assets/titancrest.jpg" alt="symbol" class="symbol">
+                
+            <h3>
+                <i>
+                "What does it mean to be a Titan? As a Titan, you are a part of the City - in a way no Warlock or Hunter could understand. The dream of the City rests upon our shoulders."
+                </i>
+                <br>
+                —Commander Zavala
+                <br>
+                <br>
+                The Titan is a class of Guardian. They tend to have the highest armor of any of the three classes in Destiny and the lowest agility.They are equipped with suits of powered armor that boost their strength and endurance. Titans utilize their strength and skill with firearms to kill their enemies.
+                Titans have long honed the power of the Traveler.
+                <br>
+            </h3>
+            
+            </div>
+            
+            
+             <div class="containsymbol">
+            
+            <img src="assets/warlockcrest.jpg" alt="symbol" class="symbol">
+                
+            <h3>
+                <i>
+                "What does it mean to be a Warlock? Power. Only Warlocks understand true power. True power lies in knowledge. In understanding. Power channeled, not controlled."
+                </i>
+                <br>
+                —Ikora Rey
+                <br>
+                <br>
+                Warlocks are "warrior-scholars," and a class of Guardian. Warlocks utilize powers granted by the Traveler for both attack and defense. Warlocks specialize in ranged melee attacks and casting elemental spells to take out enemies. Warlocks were the first to tap the power of the Traveler, wielding its light as they ventured beyond the safety of the Shield.
+                <br>
+            </h3>
+            
+            </div>
+            
+            <br>
+            <br>
+            
+            <iframe src="https://www.youtube.com/embed/gkCgfbXHlOw" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            
+            
+            <br>
+            <br>
+            <br>
+            
+            
+                 
+            </div>
+            
+        </center>
+        
+        
+        
+        <footer>
+            
+            <div id="foot">
+                <div class="social">
+                    <h3 class="footerh3">Stay Connected</h3>
+                    
+                    
+                    
+                    
+                    <a class="social youtube" href="https://youtube.com">
+                        <img src="assets/youtube.png" alt="icon" class="icon">
+                    </a>
+                   
+                   <a class="social twitter" href="https://twitter.com">
+                        <img src="assets/twitter.png" alt="icon" class="icon">
+                    </a>
+                   
+                    <a class="social xbox" href="https://xbox.com">
+                        <img src="assets/xbox.png" alt="icon" class="icon">
+                    </a>
+                    
+                </div>
+                
+                
+                <script>
+                    
+                    function validateForm ()
+                    {
+                        var x=document.forms["Form"] ["fname"].value
+                        if (x==null || x=="")
+                            {
+                                alert ("Enter your Xbox gamertag");
+                                return false;
+                            } else
+                                {
+                                    alert("Your form has been submitted")
+                                }
+                        onsubmit="window.location.reload();"
+                    } 
+                    
+            
+                </script>
+                
+               
+                <div class="contact">
+                    
+                    <h3 class="footerh3">Contact  Us</h3>
+                    
+                    <form name="Form" action="index.html" onSubmit="return validateForm ()" method="post">
+                        
+                        <label>Xbox Gamertag* Required</label>
+                        <br>
+                        <input class="text" name="fname" type="text" />
+                        <br><br>
+                        
+                        
+                        <label>Email</label>
+                        <br>
+                        <input class="text" name="email" type="text" />
+                        <br><br>
+                        
+                        <label>Message</label>
+                        <br>
+                        <textarea class="message" name="message"></textarea>
+                        <br><br>
+                        
+                        <input class="submit" name="submit" type="submit" value="submit" />
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </footer>
+        
+        
+        
+    </body>
+</html>

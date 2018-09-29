@@ -1,0 +1,770 @@
+/* css for background image */
+
+body {
+    margin: 0;
+    background-image: url("https://avante.biz/wp-content/uploads/Destiny-Wallpaper-Hd/Destiny-Wallpaper-Hd-009.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* css for header */
+
+.container {
+    margin: 0 auto;
+
+}
+
+ul, img {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+header {
+	height: 9vh;
+    background: #73aeff;
+    opacity: 0.6;
+	
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+   
+}
+
+.logo {
+    width: 12.2vw;
+    padding: 1vw 0;
+	margin: 0 5vw;
+    
+}
+
+/* css for nav bar */
+
+nav {
+	width: 100%;
+    background-color: #73aeff;
+	position: fixed;
+    z-index: 1;
+}
+
+nav ul {
+	width: 50vw;
+    margin: 0 4vw;
+    padding-left: 5vw;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 2.5vw;
+    padding-top: 4vh;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8vh;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 0.7vh;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition:  all ease-in-out 300ms;
+    
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/******************
+** css for footer **
+******************/
+
+footer { 
+    width: 100%;
+    height: 400px;
+    background: #73aeff;
+    opacity: 0.6;
+    margin-top: 0px; 
+}
+
+#foot {
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+	font-size: 2vh;
+    font-family: 'Work Sans', sans-serif;
+    color: #67809f;
+    text-shadow: 0.2vw 0.2vw 0.5vw black;
+}
+
+.icon {
+    height: 5.5vh;
+    width: 3.5vw;
+}
+
+div.social {
+    float: left;
+    margin-top: 2vh;  
+}
+
+a.social {
+    margin-right: 2vw;
+    height: 2vh;
+    width: 2vw;
+}
+
+.contact {
+    font-size: 2.2vh;
+}
+
+.footerh3 {
+    font-size: 2.2vh;
+}
+
+div.contact {
+    float: right;
+    margin-right: vw;
+    margin-top: 2vh;
+}
+
+label {
+    font-family: 'Work Sans', sans-serif;
+    color: #444;
+}
+
+input.text {
+    height: 3.5vh;
+    width: 17vw;
+    border-radius: 3px;
+    border: none;
+}
+
+textarea.message {
+    height: 10vh;
+    width: 30vw;
+    border-radius: 0.2vw;
+    border: none;
+}
+
+input.submit {
+    width: 4vw;
+    height: 3.5vh;
+    background-color: aliceblue;
+    color: #73aeff;
+    border: none;
+    border-radius: 0.2vw;
+}
+
+
+input.submit::hover {
+    text-decoration: underline
+}
+
+.pagecontent {
+    align-content: center;
+    background-color: rgba(78, 74, 74, 0.6);
+    height: auto;
+    width: 80%;
+    margin-bottom: 2vh;
+	margin-top: 2vh;
+	border-radius: 0.7vw;
+   
+}
+
+/* css for mosaic portfolio */
+
+.main-content {
+    padding: 10%;
+    flex: 1 1 80%;
+    height: 100vh;
+   
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2vw;
+}
+
+.port-item {
+    
+    color: #444;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.port-item.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.port-item.large {
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.port-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.port-item.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.port-item,.wide {
+    grid-row: span 2;
+    grid-column: span 3;
+
+}
+
+.two {
+    background: #73aeff;
+    background-image: url("https://www.candb.com/site/candb/cache/artwork/1600/vault-of-glass_destiny_bungie_1600x980_marked.jpg");
+    background-blend-mode: multiply;
+    color: lightgray;    
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 400ms;
+}
+
+.two:hover {
+    background-blend-mode: initial;
+    background-position: center;
+}
+
+.six {
+    background: #5D6D7E;
+    background-image: url("https://i.pinimg.com/originals/83/48/92/8348929d06db3b23da422d03bd6b5517.jpg");
+    background-blend-mode: multiply;
+    color: lightgray;
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 400ms;
+
+}
+
+.six:hover {
+    background-blend-mode: initial;
+    background-position: center;
+}
+
+.one {
+    background: #45B39D;
+    background-image: url("https://i.imgur.com/urEGODb.png");
+    background-blend-mode: multiply;
+    color: lightgray;
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 400ms;
+
+}
+
+.one:hover {
+    background-blend-mode: initial;
+    background-position: center;
+}
+
+.three {
+    background: #E74C3C;
+    background-image: url("http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/06/rise-of-iron.jpg");
+    background-blend-mode: multiply;
+    color: lightgray;
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 400ms;
+
+}
+
+.three:hover {
+    background-blend-mode: initial;
+    background-position: center;
+}
+
+.four {
+    background: #9B59B6;
+    background-image: url("https://www.destinyftw.com/wp-content/uploads/2017/03/raid.png");
+    background-blend-mode: multiply;
+    color: lightgray;
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 400ms;
+
+}
+
+.four:hover {
+    background-blend-mode: initial;
+    background-position: center;
+}
+
+.five {
+    background: #BDC3C7;
+    background-image: url("http://s1.1zoom.me/b5050/92/Destiny_(video_game)_509945_3840x2160.jpg");
+    background-blend-mode: multiply;
+    color: #000;
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 400ms;
+
+}
+
+.five:hover {
+    background-blend-mode: initial;
+    background-position: center;
+}
+
+/* h2 text */
+
+h2 {
+    font-size: 36px;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 70px;
+}
+
+/********************************
+css for slideshow on subclass.html
+********************************/
+
+#slider, .wrap. slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+	opacity: 1.0;
+    z-index: 10002;
+    
+}
+
+.wrap {
+    position: relative;
+   
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("../assets/hunter.jpg");
+	height: 60vh;
+    width: 62vw;
+    border: 0.2vw solid #404040;
+}
+
+.slide2 {
+    background-image: url("../assets/titan.jpg");
+	height: 60vh;
+    width: 62vw;
+    border: 0.2vw solid #404040;
+}
+
+.slide3 {
+    background-image: url("../assets/warlock.jpg");
+	height: 60vh;
+    width: 62vw;
+    border: 0.2vw solid #404040;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content1 span {
+    font-size: 4rem;
+	color:#45008a;
+}
+
+.slide-content2 span {
+    font-size: 4rem;
+	color:#9f3535;
+}
+
+.slide-content3 span {
+    font-size: 4rem;
+	color:#0b7999;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent lightgray transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    border-width: 30px 0px 30px 40px;
+    border-color: transparent transparent transparent lightgray;
+    right: 0;
+    margin-right: 30px;
+}
+
+/**********************
+CSS for table on weapons.html
+**********************/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0.25vw solid #404040;
+    border-left: 0.2vw solid #404040;
+    z-index: 0; 
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20vw;
+    background-color: rgba(178, 158, 43, 0.6);
+    color: #444;
+    text-align: left;
+    font-family: helvetica;
+    border-radius: 0.5vw;
+    padding: 10vw 0;
+    position: absolute;
+    z-index: 0;
+    bottom: 5%;
+    top: 5%;
+    left: 30%;   
+    margin-left: -5vw;
+    opacity: 0;
+    transition: opacity 1.25s;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+    /*border: 1px solid #cccccc;*/
+    padding: 1vw;
+    width: 20vw;
+    /*height: 250px;*/
+}
+
+.tablemid{
+    padding: 0;
+    border: 0.4vw solid #404040;
+    border-radius: 0.5vw;; 
+    border-spacing: 0;
+}
+
+table tr, table td {
+    padding: 0;
+    
+}
+
+      
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0.2vw solid #404040;
+    border-left: 0.2vw solid #404040;
+    z-index: 0; 
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 20vw;
+    background-color: rgba(153, 104, 201, 0.6);
+    color: #444;
+    text-align: left;
+    font-family: helvetica;
+    border-radius: 0.5vw;
+    padding: 10vw 0;
+    position: absolute;
+    z-index: 0;
+    bottom: 5%;
+    top: 5%;
+    left: 30%;   
+    margin-left: -5vw;
+    opacity: 0;
+    transition: opacity 1.25s;
+}
+
+.tooltip2:hover .tooltiptext2{
+     visibility: visible;
+    opacity: 1;
+    /*border: 1px solid #cccccc;*/
+    padding: 1vw;
+    width: 20vw;
+    /*height: 250px;*/
+}       
+.exotic {
+    font-style: italic;
+    color: #f1c40f;
+}
+
+.legendary {
+    font-style: italic;
+    color: #9b59b6;
+}
+
+
+.imageraid {
+    border: 0.3vw solid #404040;
+    height: 60vh;
+    width: 63vw;
+   
+}
+
+.information {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #404040;
+    color: #b3b3cc;
+    text-align: left;
+    border: 0.1vw solid #73aeff;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    margin-top: 0.1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
+    font-size: 2vh;
+}
+
+.boss {
+    border-collapse: collapse;
+    width: 60vw;
+}
+
+.containsymbol {
+    padding: 0.4vw;
+    text-align: left;
+    background-color: #404040;
+    border-radius: 0.3vw;
+    border: 0.1vw solid #73aeff;
+    color: #b3b3cc;
+    margin-top: 7vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 7vh;
+}
+
+.symbol {
+    border: 0.2vw solid #b3b3cc;
+    border-radius: 0.4vw;
+    margin: 1.5vw;
+    height: 32vh;
+    width: 20vw;
+    float: left;
+}
+
+/*********************************
+--------CSS for Search Bar-------
+*********************************/
+
+#searchBar {
+    border: 0.1vw solid #000000;
+    border-right: none;
+    font-size: 1.8vh;
+    padding: 0.6vw;
+    outline: none;
+    width: 25vw;
+    -webkit-border-top-left-radius: 0.5vw;
+    -webkit-border-bottom-left-radius: 0.5vw;
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
+}
+
+#searchBtn {
+    border: 0.1vw solid #000000;
+    font-size: 1.8vh;
+    padding: 0.6vw;
+    background: #73aeff;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-top-right-radius: 0.5vw;
+    -webkit-border-bottom-right-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+}
+
+#searchBtn:hover {
+    background: lightgray;
+}
+
+.searchspace {
+    
+    align-content: center;
+    background-color: rgba(78, 74, 74, 0.6);
+    height: auto;
+    width: 35vw;
+    padding-top: 0.6vh;
+    padding-bottom: 0.6vh;
+    margin-bottom: 0vh;
+	margin-top: 1.7vh;
+	border-radius: 0.7vw;
+}
+
+.weaponsarmour {
+    height: 26vh;
+    width: 25.5vw;
+    border: 0;
+}
+
+/**********************
+*******Video**********
+*********************/
+
+iframe {
+    border: 0.3vw solid #73aeff;
+    border-radius: 0.2vw;
+    height: 50vh;
+    width: 50vw;
+}
+
+/********************************************
+********For mobile phone usage **************
+********************************************/
+
+@media only screen and (max-width: 500px) {
+    
+    .logo {
+        margin-top: vh;
+        margin-left: 2vh;
+        height: 7vh;
+        width: 26vw;
+        padding: 1vw 0;
+        }
+    
+    nav li {
+        float: right;
+        margin: 0 10vw;
+        padding-top: 1vh;
+        position: relative;
+        }
+    
+    nav ul {
+	    width: 50vw;
+        margin: 0 4vw;
+        padding-left: 50vw;
+        list-style: none;
+        padding-bottom: 3vh;
+        }
+    
+    .searchspace {
+        background-color: rgba(78, 74, 74, 0.6);
+        height: auto;
+        width: 35vw;
+        padding-top: 0.6vh;
+        padding-bottom: 0.6vh;
+        margin-bottom: 0vh;
+        margin-top: 22vh;
+        border-radius: 0.7vw;
+        }
+    
+        nav {
+	       width: 100%;
+           background-color: #73aeff;
+           z-index: 1;
+            }
+    
+    .pagecontent {
+        
+        background-color: rgba(78, 74, 74, 0.6);
+        height: auto;
+        width: 80%;
+        margin-bottom: 2vh;
+        margin-top: 6vh;
+        border-radius: 0.7vw;
+        }
+    
+    .icon {
+        height: 3.5vh;
+        width: 5vw;
+        }
+
+    div.social {
+        float: left;
+        margin-top: 2vh;  
+        }
+
+    a.social {
+        margin-right: 2vw;
+        height: 2vh;
+        width: 5vw;
+        }
+
+    .contact {
+        font-size: 2.2vh;
+        }
+
+    .footerh3 {
+        font-size: 2.2vh;
+        }   
+
+    div.contact {
+        float: right;
+        margin-right: 0vw;
+        margin-top: 2vh;
+        }
+    
+    input.submit {
+        width: 11vw;
+        height: 3.5vh;
+        background-color: aliceblue;
+        color: #73aeff;
+        border: none;
+        border-radius: 0.2vw;
+        }
+    
+    textarea.message {
+        height: 3vh;
+        width: 40vw;
+        border-radius: 0.2vw;
+        border: none;
+        }
+    
+    .weaponsarmour {
+        height: 35vh;
+        width: 80vw;
+        border: 0;
+        }
+
+}
